@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		079FE25520F71AE900B9988C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079FE25420F71AE900B9988C /* MainViewController.swift */; };
+		079FE25820F8595E00B9988C /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079FE25720F8595E00B9988C /* UIImageViewExtensions.swift */; };
+		079FE25A20F85A1E00B9988C /* ServerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079FE25920F85A1E00B9988C /* ServerHelper.swift */; };
+		079FE25C20F85A7900B9988C /* FaceMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079FE25B20F85A7900B9988C /* FaceMetaData.swift */; };
+		079FE26020F85F3D00B9988C /* FaceAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079FE25F20F85F3D00B9988C /* FaceAttributes.swift */; };
+		079FE26820F9DBB700B9988C /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079FE26720F9DBB700B9988C /* UIImageExtension.swift */; };
+		079FE26C20FB288A00B9988C /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079FE26B20FB288900B9988C /* UIViewExtensions.swift */; };
+		079FE26E20FB301D00B9988C /* HeadPose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079FE26D20FB301D00B9988C /* HeadPose.swift */; };
 		68D6CE2D20927B3D0009EFD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D6CE2C20927B3D0009EFD3 /* AppDelegate.m */; };
 		68D6CE3020927B3D0009EFD3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D6CE2F20927B3D0009EFD3 /* ViewController.m */; };
 		68D6CE3320927B3D0009EFD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68D6CE3120927B3D0009EFD3 /* Main.storyboard */; };
@@ -38,6 +46,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		079FE25320F71AE900B9988C /* FaceSelection-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FaceSelection-Bridging-Header.h"; sourceTree = "<group>"; };
+		079FE25420F71AE900B9988C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		079FE25720F8595E00B9988C /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
+		079FE25920F85A1E00B9988C /* ServerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerHelper.swift; sourceTree = "<group>"; };
+		079FE25B20F85A7900B9988C /* FaceMetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceMetaData.swift; sourceTree = "<group>"; };
+		079FE25F20F85F3D00B9988C /* FaceAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceAttributes.swift; sourceTree = "<group>"; };
+		079FE26720F9DBB700B9988C /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		079FE26B20FB288900B9988C /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		079FE26D20FB301D00B9988C /* HeadPose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadPose.swift; sourceTree = "<group>"; };
 		0A50698509C397C76E4B630F /* Pods_FaceSelectionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceSelectionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2814CC3E4ACF0573972D4767 /* Pods-FaceSelection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceSelection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FaceSelection/Pods-FaceSelection.debug.xcconfig"; sourceTree = "<group>"; };
 		310EE17EAF5EA00D249F4542 /* Pods-FaceSelectionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceSelectionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FaceSelectionTests/Pods-FaceSelectionTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +110,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		079FE25620F71B6700B9988C /* Obj-C */ = {
+			isa = PBXGroup;
+			children = (
+				68D6CE2B20927B3D0009EFD3 /* AppDelegate.h */,
+				68D6CE2C20927B3D0009EFD3 /* AppDelegate.m */,
+				68D6CE2E20927B3D0009EFD3 /* ViewController.h */,
+				68D6CE2F20927B3D0009EFD3 /* ViewController.m */,
+				68D6CE3A20927B410009EFD3 /* main.m */,
+			);
+			path = "Obj-C";
+			sourceTree = "<group>";
+		};
 		59188215B59222BF732346E3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,15 +160,20 @@
 		68D6CE2A20927B3D0009EFD3 /* FaceSelection */ = {
 			isa = PBXGroup;
 			children = (
-				68D6CE2B20927B3D0009EFD3 /* AppDelegate.h */,
-				68D6CE2C20927B3D0009EFD3 /* AppDelegate.m */,
-				68D6CE2E20927B3D0009EFD3 /* ViewController.h */,
-				68D6CE2F20927B3D0009EFD3 /* ViewController.m */,
+				079FE25620F71B6700B9988C /* Obj-C */,
+				079FE25420F71AE900B9988C /* MainViewController.swift */,
+				079FE25920F85A1E00B9988C /* ServerHelper.swift */,
+				079FE25B20F85A7900B9988C /* FaceMetaData.swift */,
+				079FE25F20F85F3D00B9988C /* FaceAttributes.swift */,
+				079FE26D20FB301D00B9988C /* HeadPose.swift */,
+				079FE25720F8595E00B9988C /* UIImageViewExtensions.swift */,
+				079FE26720F9DBB700B9988C /* UIImageExtension.swift */,
+				079FE26B20FB288900B9988C /* UIViewExtensions.swift */,
 				68D6CE3120927B3D0009EFD3 /* Main.storyboard */,
+				079FE25320F71AE900B9988C /* FaceSelection-Bridging-Header.h */,
 				68D6CE3420927B410009EFD3 /* Assets.xcassets */,
 				68D6CE3620927B410009EFD3 /* LaunchScreen.storyboard */,
 				68D6CE3920927B410009EFD3 /* Info.plist */,
-				68D6CE3A20927B410009EFD3 /* main.m */,
 			);
 			path = FaceSelection;
 			sourceTree = "<group>";
@@ -184,7 +218,6 @@
 				68D6CE2520927B3D0009EFD3 /* Frameworks */,
 				68D6CE2620927B3D0009EFD3 /* Resources */,
 				DCB57A19349D322CD7456AE1 /* [CP] Embed Pods Frameworks */,
-				D77FA933026B4A3D78CB12AF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,8 +236,6 @@
 				68D6CE3C20927B410009EFD3 /* Sources */,
 				68D6CE3D20927B410009EFD3 /* Frameworks */,
 				68D6CE3E20927B410009EFD3 /* Resources */,
-				F4D15668D6647D582E1AD081 /* [CP] Embed Pods Frameworks */,
-				3580B3AE193B5DDB9E6065A1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,8 +255,6 @@
 				68D6CE4720927B410009EFD3 /* Sources */,
 				68D6CE4820927B410009EFD3 /* Frameworks */,
 				68D6CE4920927B410009EFD3 /* Resources */,
-				948798A7753C0BEB2724E7DD /* [CP] Embed Pods Frameworks */,
-				9B5752B472FE570212F3978C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,6 +277,7 @@
 				TargetAttributes = {
 					68D6CE2720927B3D0009EFD3 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					68D6CE3F20927B410009EFD3 = {
 						CreatedOnToolsVersion = 9.3;
@@ -307,21 +337,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3580B3AE193B5DDB9E6065A1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FaceSelectionTests/Pods-FaceSelectionTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		53816B3B5DD682A1EA2B21B1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -338,21 +353,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		948798A7753C0BEB2724E7DD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FaceSelectionUITests/Pods-FaceSelectionUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9866D971495876AABBE8AA4A /* [CP] Check Pods Manifest.lock */ = {
@@ -373,21 +373,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9B5752B472FE570212F3978C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FaceSelectionUITests/Pods-FaceSelectionUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A5C354BB8C970DFF5257F0D9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -406,49 +391,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D77FA933026B4A3D78CB12AF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FaceSelection/Pods-FaceSelection-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		DCB57A19349D322CD7456AE1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FaceSelection/Pods-FaceSelection-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FaceSelection/Pods-FaceSelection-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F4D15668D6647D582E1AD081 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FaceSelectionTests/Pods-FaceSelectionTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -460,7 +424,15 @@
 			files = (
 				68D6CE3020927B3D0009EFD3 /* ViewController.m in Sources */,
 				68D6CE3B20927B410009EFD3 /* main.m in Sources */,
+				079FE26020F85F3D00B9988C /* FaceAttributes.swift in Sources */,
+				079FE25A20F85A1E00B9988C /* ServerHelper.swift in Sources */,
 				68D6CE2D20927B3D0009EFD3 /* AppDelegate.m in Sources */,
+				079FE26820F9DBB700B9988C /* UIImageExtension.swift in Sources */,
+				079FE26C20FB288A00B9988C /* UIViewExtensions.swift in Sources */,
+				079FE25820F8595E00B9988C /* UIImageViewExtensions.swift in Sources */,
+				079FE25520F71AE900B9988C /* MainViewController.swift in Sources */,
+				079FE25C20F85A7900B9988C /* FaceMetaData.swift in Sources */,
+				079FE26E20FB301D00B9988C /* HeadPose.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,6 +602,7 @@
 			baseConfigurationReference = 2814CC3E4ACF0573972D4767 /* Pods-FaceSelection.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FaceSelection/Info.plist;
@@ -639,6 +612,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.curiouskiwi.FaceSelection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FaceSelection/FaceSelection-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -648,6 +624,7 @@
 			baseConfigurationReference = 7B19A795E01DD03D137CCF2A /* Pods-FaceSelection.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FaceSelection/Info.plist;
@@ -657,6 +634,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.curiouskiwi.FaceSelection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FaceSelection/FaceSelection-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -665,6 +644,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 310EE17EAF5EA00D249F4542 /* Pods-FaceSelectionTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
@@ -685,6 +665,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 49A966BA695C7FA8D3D35D5D /* Pods-FaceSelectionTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
@@ -705,6 +686,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 76A8B164BB152C0551E04780 /* Pods-FaceSelectionUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FaceSelectionUITests/Info.plist;
@@ -724,6 +706,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 40F6B7A4144370DBED5BD312 /* Pods-FaceSelectionUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FaceSelectionUITests/Info.plist;

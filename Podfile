@@ -6,6 +6,10 @@ target 'FaceSelection' do
   use_frameworks!
 
   # Pods for FaceSelection
+pod 'Alamofire', '~> 4.5'
+pod 'AlamofireImage', '~> 3.3'
+pod 'SwiftyJSON'
+pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
 
   target 'FaceSelectionTests' do
     inherit! :search_paths
